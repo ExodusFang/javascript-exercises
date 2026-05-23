@@ -1,5 +1,10 @@
-const removeFromArray = function(arr, element) {
-    return arr.filter(item => item !== element);
+const removeFromArray = function(arr, ...args) {
+    
+    for (const arg of args) {
+        arr = arr.filter(item => item !== arg);
+    }
+
+    return arr;
 };
 
 // Do not edit below this line
