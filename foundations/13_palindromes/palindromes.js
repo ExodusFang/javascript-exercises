@@ -1,5 +1,5 @@
 const palindromes = function (str) {
-    const strArr = str.toLowerCase().split("");
+    const strArr = str.toLowerCase().match(/[a-z0-9]/g);
     return strArr.every((item, index) => item === strArr.at(-(index + 1)));
 };
 
