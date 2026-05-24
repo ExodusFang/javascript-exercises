@@ -19,7 +19,7 @@ const power = function(num1, num2) {
 };
 
 const factorial = function(num) {
-  const product = 1;
+  let product = 1;
   for (let i = 2; i <= num; i++) product *= i;
 
   return product;
