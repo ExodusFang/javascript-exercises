@@ -1,6 +1,6 @@
 const palindromes = function (str) {
-    const strArr = str.split("");
-    return !strArr.some((item, index) => strArr[index] != strArr[-(index + 1)]);
+    const strArr = str.toLowerCase().split("");
+    return strArr.every((item, index) => item === strArr.at(-(index + 1)));
 };
 
 // Do not edit below this line
